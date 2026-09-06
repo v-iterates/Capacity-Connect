@@ -1,0 +1,834 @@
+/* =========================================================
+   SIGNUP PAGE
+========================================================= */
+
+.signup-page {
+  min-height: 100vh;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.signup-container {
+  width: 1050px;
+  height: 650px;
+  max-width: 92%;
+
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+
+  border-radius: 28px;
+  overflow: hidden;
+
+  background: white;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   LEFT BRAND SECTION
+========================================================= */
+
+.signup-brand {
+  position: relative;
+
+  padding: 48px 58px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #173b23,
+      #214b2c
+    );
+
+  color: white;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Decorative circle */
+
+.signup-brand::before {
+  content: "";
+
+  position: absolute;
+
+  width: 360px;
+  height: 360px;
+
+  border: 65px solid rgba(91, 150, 86, 0.12);
+
+  border-radius: 50%;
+
+  right: -150px;
+  top: -160px;
+}
+
+
+/* Another decorative circle */
+
+.signup-brand::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  border: 55px solid rgba(91, 150, 86, 0.10);
+
+  border-radius: 50%;
+
+  left: -160px;
+  bottom: -170px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.signup-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+.signup-logo-icon {
+  width: 47px;
+  height: 47px;
+
+  border-radius: 12px;
+
+  background: #4cae3e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   BRAND CONTENT
+========================================================= */
+
+.signup-brand-content {
+  position: relative;
+  z-index: 2;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  max-width: 520px;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.signup-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 9px 16px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   BRAND HEADING
+========================================================= */
+
+.signup-brand-content h1 {
+  margin: 0;
+
+  font-size: 48px;
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+
+.signup-brand-content h1 span {
+  color: #82d978;
+}
+
+
+/* =========================================================
+   BRAND DESCRIPTION
+========================================================= */
+
+.signup-brand-content > p {
+  margin-top: 24px;
+  margin-bottom: 25px;
+
+  max-width: 500px;
+
+  color: #d8e8dc;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.signup-benefits {
+  display: flex;
+  flex-direction: column;
+
+  gap: 13px;
+}
+
+
+.signup-benefit {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #e6f1e8;
+
+  font-size: 14px;
+}
+
+
+.benefit-icon {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  background: #4cae3e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   SIGNUP CARD
+========================================================= */
+
+.signup-card {
+  background: #ffffff;
+
+  padding: 38px 48px;
+
+  overflow-y: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.signup-header {
+  margin-bottom: 22px;
+}
+
+
+.signup-header h2 {
+  margin: 0;
+
+  color: #123c22;
+
+  font-size: 31px;
+  font-weight: 800;
+}
+
+
+.signup-header p {
+  margin: 7px 0 0;
+
+  color: #708078;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.signup-form-group {
+  margin-bottom: 13px;
+}
+
+
+.signup-form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #172a20;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.signup-input-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+
+.signup-input-wrapper input {
+  width: 100%;
+  height: 43px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 10px;
+
+  background: #fbfdfb;
+
+  color: #26352e;
+
+  font-size: 13px;
+
+  padding: 0 43px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+
+.signup-input-wrapper input::placeholder {
+  color: #9aa8a1;
+}
+
+
+.signup-input-wrapper input:focus {
+  border-color: #4cae3e;
+
+  background: white;
+
+  box-shadow:
+    0 0 0 3px rgba(76, 174, 62, 0.10);
+}
+
+
+/* =========================================================
+   INPUT ICON
+========================================================= */
+
+.signup-input-icon {
+  position: absolute;
+
+  left: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #6c7d74;
+
+  font-size: 13px;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   PASSWORD TOGGLE
+========================================================= */
+
+.signup-password-toggle {
+  position: absolute;
+
+  right: 13px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  color: #64766d;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  padding: 4px;
+}
+
+
+.signup-password-toggle:hover {
+  color: #23943d;
+}
+
+
+/* =========================================================
+   ROLE SELECTION
+========================================================= */
+
+.role-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+
+.role-btn {
+  height: 40px;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #5f7168;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.role-btn:hover {
+  border-color: #73b66b;
+
+  color: #2c8134;
+}
+
+
+.role-btn.active {
+  border-color: #4cae3e;
+
+  background: #eef9ec;
+
+  color: #25832e;
+
+  box-shadow:
+    0 0 0 1px rgba(76, 174, 62, 0.15);
+}
+
+
+/* =========================================================
+   TERMS CHECKBOX
+========================================================= */
+
+.terms-checkbox {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 5px;
+  margin-bottom: 12px;
+
+  color: #687970;
+
+  font-size: 11.5px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+
+.terms-checkbox input {
+  display: none;
+}
+
+
+.terms-custom-checkbox {
+  width: 17px;
+  height: 17px;
+
+  flex-shrink: 0;
+
+  border: 1.5px solid #b9c9c0;
+
+  border-radius: 4px;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  transition: 0.2s ease;
+}
+
+
+.terms-checkbox input:checked + .terms-custom-checkbox {
+  background: #159c58;
+
+  border-color: #159c58;
+}
+
+
+.terms-custom-checkbox svg {
+  font-size: 9px;
+}
+
+
+.terms-text {
+  line-height: 1.4;
+}
+
+
+.terms-link {
+  border: none;
+  padding: 0;
+
+  background: transparent;
+
+  color: #23943d;
+
+  font-size: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.signup-error {
+  margin-bottom: 12px;
+
+  padding: 9px 12px;
+
+  border-radius: 8px;
+
+  background: #fff2f2;
+
+  border: 1px solid #f2caca;
+
+  color: #c0392b;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   CREATE ACCOUNT BUTTON
+========================================================= */
+
+.signup-submit-btn {
+  width: 100%;
+  height: 45px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #4cae3e;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  transition: 0.2s ease;
+}
+
+
+.signup-submit-btn:hover {
+  background: #3e9634;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 18px rgba(76, 174, 62, 0.20);
+}
+
+
+.signup-submit-btn span {
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.signup-divider {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 16px 0;
+}
+
+
+.signup-divider::before,
+.signup-divider::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #e4ebe6;
+}
+
+
+.signup-divider span {
+  color: #9aa7a0;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   GOOGLE BUTTON
+========================================================= */
+
+.google-signup-btn {
+  width: 100%;
+  height: 43px;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #183d25;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  transition: 0.2s ease;
+}
+
+
+.google-signup-btn svg {
+  color: #4285f4;
+
+  font-size: 15px;
+}
+
+
+.google-signup-btn:hover {
+  background: #f8fbf9;
+
+  border-color: #b9c9c0;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   LOGIN REDIRECT
+========================================================= */
+
+.login-redirect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  margin-top: 17px;
+
+  color: #718078;
+
+  font-size: 12px;
+}
+
+
+.login-link {
+  border: none;
+  padding: 0;
+
+  background: transparent;
+
+  color: #23943d;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .signup-container {
+    width: 700px;
+    height: auto;
+
+    grid-template-columns: 1fr;
+  }
+
+  .signup-brand {
+    min-height: 300px;
+
+    padding: 35px 40px;
+  }
+
+  .signup-brand-content {
+    margin-top: 45px;
+  }
+
+  .signup-brand-content h1 {
+    font-size: 38px;
+  }
+
+  .signup-card {
+    padding: 35px 40px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .signup-page {
+    padding: 15px;
+  }
+
+  .signup-container {
+    max-width: 100%;
+
+    border-radius: 20px;
+  }
+
+  .signup-brand {
+    padding: 30px 25px;
+
+    min-height: 280px;
+  }
+
+  .signup-logo {
+    font-size: 16px;
+  }
+
+  .signup-logo-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 21px;
+  }
+
+  .signup-brand-content h1 {
+    font-size: 31px;
+  }
+
+  .signup-brand-content > p {
+    font-size: 13px;
+  }
+
+  .signup-card {
+    padding: 30px 25px;
+  }
+
+  .signup-header h2 {
+    font-size: 27px;
+  }
+
+}
