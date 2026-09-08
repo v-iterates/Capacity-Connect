@@ -5,4 +5,4 @@ function App() {
   return <Signup />;
 }
 
-export default App; 
+export default App;
