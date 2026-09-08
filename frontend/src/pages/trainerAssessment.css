@@ -1,0 +1,1067 @@
+/* =========================================================
+   TRAINER ASSESSMENT PAGE
+   Capacity Connect
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.trainer-assessment-page {
+  min-height: 100vh;
+  background: #f5f8f5;
+  color: #183b25;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.trainer-assessment-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 245px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e2e9e3;
+  padding: 30px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+
+/* Logo */
+
+.ta-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 5px 25px;
+  white-space: nowrap;
+}
+
+.ta-logo-icon {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 10px;
+  background: #45a83f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.ta-logo-icon span {
+  display: block;
+  line-height: 1;
+}
+
+.ta-logo-text {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.ta-logo-text h2 {
+  margin: 0;
+  padding: 0;
+  color: #214b2a;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+
+/* Navigation */
+
+.ta-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ta-nav-item {
+  min-height: 48px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  border-radius: 13px;
+  text-decoration: none;
+  color: #52645a;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.ta-nav-item span {
+  width: 22px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.ta-nav-item:hover {
+  background: #f0f7f0;
+  color: #247334;
+}
+
+.ta-nav-item.active {
+  background: #e7f5e8;
+  color: #18702d;
+  font-weight: 700;
+}
+
+.ta-nav-divider {
+  height: 1px;
+  background: #e3e9e4;
+  margin: 14px 12px;
+}
+
+
+/* Sidebar User */
+
+.ta-sidebar-user {
+  margin-top: auto;
+  border-top: 1px solid #e5ebe6;
+  padding: 15px 10px 3px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.ta-user-avatar {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 50%;
+  background: #e1f1e2;
+  color: #217331;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.ta-sidebar-user div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ta-sidebar-user strong {
+  color: #183b25;
+  font-size: 14px;
+}
+
+.ta-sidebar-user span {
+  color: #829087;
+  font-size: 12px;
+}
+
+.ta-user-more {
+  margin-left: auto;
+  color: #6e7c73 !important;
+  font-size: 20px !important;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.trainer-assessment-main {
+  margin-left: 245px;
+  width: calc(100% - 245px);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.ta-topbar {
+  height: 96px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e9e3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px 0 42px;
+}
+
+.ta-search {
+  width: 410px;
+  height: 52px;
+  border: 1px solid #dce5de;
+  border-radius: 12px;
+  background: #f8faf8;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+
+.ta-search span {
+  font-size: 25px;
+  color: #668074;
+  transform: rotate(-20deg);
+}
+
+.ta-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #274333;
+  font-size: 16px;
+}
+
+.ta-search input::placeholder {
+  color: #93a09a;
+}
+
+.ta-top-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.ta-notification {
+  position: relative;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.ta-notification span {
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ef5350;
+}
+
+.ta-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ta-profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e1f1e2;
+  color: #18712d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.ta-profile div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ta-profile strong {
+  color: #183b25;
+  font-size: 14px;
+}
+
+.ta-profile small {
+  color: #7d8b82;
+  font-size: 12px;
+}
+
+.ta-profile > span {
+  margin-left: 5px;
+  color: #52645a;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.ta-page-header {
+  padding: 35px 44px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ta-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ta-back-btn {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #dce6df;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #597262;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.ta-back-btn:hover {
+  background: #eef7ef;
+  color: #267b35;
+}
+
+.ta-header-left p {
+  margin: 0 0 7px;
+  color: #45a83f;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.ta-header-left h1 {
+  margin: 0;
+  color: #123c25;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.ta-header-left span {
+  display: block;
+  margin-top: 7px;
+  color: #738179;
+  font-size: 16px;
+}
+
+.ta-header-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #e5f5e6;
+  color: #3c9944;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.ta-message {
+  margin: 0 44px 20px;
+  min-height: 50px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #e7f6e9;
+  border: 1px solid #cce8cf;
+  color: #247333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.ta-message button {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: #55705b;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.ta-card {
+  margin: 0 44px 22px;
+  padding: 27px 30px;
+  background: #ffffff;
+  border: 1px solid #e0e8e1;
+  border-radius: 16px;
+  box-shadow: 0 3px 14px rgba(27, 67, 39, 0.035);
+}
+
+.ta-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 27px;
+}
+
+.ta-section-number {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 12px;
+  background: #e6f5e7;
+  color: #289039;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ta-card-header h2 {
+  margin: 0;
+  color: #173d26;
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.ta-card-header p {
+  margin: 4px 0 0;
+  color: #829088;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.ta-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 22px;
+}
+
+.ta-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ta-full {
+  grid-column: 1 / -1;
+}
+
+.ta-form-group label {
+  color: #25412f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ta-form-group label span {
+  color: #e45656;
+}
+
+.ta-form-group input,
+.ta-form-group select,
+.ta-form-group textarea {
+  width: 100%;
+  border: 1px solid #dce5de;
+  border-radius: 11px;
+  outline: none;
+  background: #fcfdfc;
+  color: #243c2c;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ta-form-group input,
+.ta-form-group select {
+  height: 52px;
+  padding: 0 15px;
+}
+
+.ta-form-group textarea {
+  padding: 14px 15px;
+  resize: vertical;
+  min-height: 90px;
+}
+
+.ta-form-group input:focus,
+.ta-form-group select:focus,
+.ta-form-group textarea:focus {
+  border-color: #57a85e;
+  box-shadow: 0 0 0 3px rgba(69, 168, 63, 0.08);
+}
+
+.ta-form-group input::placeholder,
+.ta-form-group textarea::placeholder {
+  color: #9aa59e;
+}
+
+.ta-input-with-unit {
+  display: flex;
+  height: 52px;
+}
+
+.ta-input-with-unit input {
+  height: 52px;
+  border-radius: 11px 0 0 11px;
+  border-right: none;
+}
+
+.ta-input-with-unit span {
+  min-width: 90px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dce5de;
+  border-radius: 0 11px 11px 0;
+  background: #f0f5f1;
+  color: #6d7e72;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   QUESTION OPTIONS
+========================================================= */
+
+.ta-options-grid {
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 22px;
+}
+
+.ta-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ta-option-group label {
+  color: #25412f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ta-option-group label span {
+  color: #e45656;
+}
+
+.ta-option-input {
+  display: flex;
+  align-items: center;
+}
+
+.ta-option-letter {
+  width: 46px;
+  height: 52px;
+  min-width: 46px;
+  border: 1px solid #dce5de;
+  border-right: none;
+  border-radius: 11px 0 0 11px;
+  background: #eaf6eb;
+  color: #28883a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.ta-option-input input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dce5de;
+  border-radius: 0 11px 11px 0;
+  outline: none;
+  padding: 0 14px;
+  font-size: 15px;
+  color: #243c2c;
+  background: #fcfdfc;
+}
+
+.ta-option-input input:focus {
+  border-color: #57a85e;
+}
+
+
+/* =========================================================
+   ANSWER ROW
+========================================================= */
+
+.ta-answer-row {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.5fr auto;
+  align-items: end;
+  gap: 18px;
+}
+
+.ta-add-question-btn {
+  height: 52px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 11px;
+  background: #3e9b45;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ta-add-question-btn:hover {
+  background: #328539;
+}
+
+
+/* =========================================================
+   SAVED QUESTIONS
+========================================================= */
+
+.ta-question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ta-question-item {
+  padding: 19px;
+  border: 1px solid #dfe8e1;
+  border-radius: 13px;
+  background: #fafcfb;
+}
+
+.ta-question-top {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.ta-question-number {
+  width: 38px;
+  height: 32px;
+  border-radius: 8px;
+  background: #e5f5e6;
+  color: #258237;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ta-question-text {
+  flex: 1;
+  color: #1d3b28;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.ta-question-marks {
+  padding: 5px 10px;
+  border-radius: 7px;
+  background: #f0f4f1;
+  color: #6a786f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ta-delete-question {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #d35c5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ta-delete-question:hover {
+  background: #ffe1e1;
+}
+
+.ta-saved-options {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.ta-saved-option {
+  min-height: 42px;
+  padding: 7px 11px;
+  border: 1px solid #e1e8e2;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ta-saved-option > span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #edf2ee;
+  color: #617168;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ta-saved-option p {
+  flex: 1;
+  margin: 0;
+  color: #5b6c61;
+  font-size: 13px;
+}
+
+.ta-saved-option.correct {
+  border-color: #b9ddbE;
+  background: #f1faf2;
+}
+
+.ta-saved-option.correct > span {
+  background: #4ca453;
+  color: white;
+}
+
+.ta-saved-option.correct svg {
+  color: #3e9b45;
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.ta-summary {
+  margin: 0 44px 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.ta-summary-item {
+  padding: 17px 20px;
+  border: 1px solid #dfe8e1;
+  border-radius: 13px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.ta-summary-item > svg {
+  color: #43a04b;
+  font-size: 22px;
+}
+
+.ta-summary-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ta-summary-item span {
+  color: #7b8a80;
+  font-size: 12px;
+}
+
+.ta-summary-item strong {
+  color: #1d4329;
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.ta-actions {
+  margin: 0 44px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.ta-save-btn,
+.ta-publish-btn {
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ta-save-btn {
+  border: 1px solid #cfdcd2;
+  background: #ffffff;
+  color: #42604b;
+}
+
+.ta-save-btn:hover {
+  background: #f2f7f3;
+}
+
+.ta-publish-btn {
+  border: none;
+  background: #398f42;
+  color: #ffffff;
+  box-shadow: 0 5px 12px rgba(57, 143, 66, 0.16);
+}
+
+.ta-publish-btn:hover {
+  background: #2f7d38;
+}
+
+.ta-footer-note {
+  margin: 14px 44px 0;
+  text-align: right;
+  color: #8a968f;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .trainer-assessment-sidebar {
+    width: 220px;
+  }
+
+  .trainer-assessment-main {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+
+  .ta-page-header,
+  .ta-card,
+  .ta-message,
+  .ta-summary,
+  .ta-actions {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
+  .ta-page-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ta-card {
+    padding: 24px;
+  }
+
+  .ta-topbar {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .ta-search {
+    width: 330px;
+  }
+
+  .ta-nav-item {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .trainer-assessment-sidebar {
+    width: 75px;
+    padding: 25px 10px;
+  }
+
+  .ta-logo {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ta-logo-text {
+    display: none;
+  }
+
+  .ta-nav-item {
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .ta-nav-item span {
+    font-size: 18px;
+  }
+
+  .ta-sidebar-user {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ta-sidebar-user div:nth-child(2),
+  .ta-user-more {
+    display: none;
+  }
+
+  .trainer-assessment-main {
+    margin-left: 75px;
+    width: calc(100% - 75px);
+  }
+
+  .ta-form-grid,
+  .ta-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ta-full {
+    grid-column: auto;
+  }
+
+  .ta-answer-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ta-add-question-btn {
+    grid-column: 1 / -1;
+  }
+
+  .ta-saved-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .ta-topbar {
+    height: 75px;
+    padding: 0 16px;
+  }
+
+  .ta-search {
+    width: 210px;
+    height: 44px;
+  }
+
+  .ta-profile div:nth-child(2),
+  .ta-profile > span {
+    display: none;
+  }
+
+  .ta-profile-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ta-page-header {
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .ta-header-icon {
+    display: none;
+  }
+
+  .ta-header-left {
+    gap: 12px;
+  }
+
+  .ta-back-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ta-header-left h1 {
+    font-size: 27px;
+  }
+
+  .ta-header-left span {
+    font-size: 13px;
+  }
+
+  .ta-card,
+  .ta-message,
+  .ta-summary,
+  .ta-actions {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .ta-card {
+    padding: 20px 17px;
+  }
+
+  .ta-card-header {
+    margin-bottom: 21px;
+  }
+
+  .ta-card-header h2 {
+    font-size: 18px;
+  }
+
+  .ta-form-grid {
+    gap: 17px;
+  }
+
+  .ta-answer-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ta-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .ta-actions {
+    flex-direction: column;
+  }
+
+  .ta-save-btn,
+  .ta-publish-btn {
+    width: 100%;
+  }
+
+  .ta-footer-note {
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+  }
+}

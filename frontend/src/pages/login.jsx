@@ -45,7 +45,6 @@ function Login() {
 
     setError("");
 
-    // Temporary frontend login
     console.log("Login submitted:", {
       role,
       email,
@@ -53,19 +52,7 @@ function Login() {
       rememberMe,
     });
 
-    /*
-      Later we will replace this with the backend API.
-
-      Example:
-
-      POST /api/auth/login
-
-      {
-        email,
-        password,
-        role
-      }
-    */
+    
   };
 
   const handleForgotPassword = () => {
@@ -87,9 +74,7 @@ function Login() {
     >
       <div className="login-container">
 
-        {/* =================================================
-            LEFT BRAND SECTION
-        ================================================= */}
+        {}
 
         <div className="login-brand">
 
@@ -130,13 +115,9 @@ function Login() {
         </div>
 
 
-        {/* =================================================
-            LOGIN CARD
-        ================================================= */}
+        {}
 
         <div className="login-card">
-
-          {/* Header */}
 
           <div className="login-header">
 
@@ -150,11 +131,6 @@ function Login() {
 
           </div>
 
-
-          {/* =================================================
-              ROLE SELECTOR
-          ================================================= */}
-
           <div className="role-login-section">
 
             <label>
@@ -163,7 +139,7 @@ function Login() {
 
             <div className="login-role-selector">
 
-              {/* ADMIN */}
+              
 
               <button
                 type="button"
@@ -186,7 +162,7 @@ function Login() {
               </button>
 
 
-              {/* TRAINER */}
+              
 
               <button
                 type="button"
@@ -209,7 +185,6 @@ function Login() {
               </button>
 
 
-              {/* TRAINEE */}
 
               <button
                 type="button"
@@ -236,9 +211,7 @@ function Login() {
           </div>
 
 
-          {/* =================================================
-              LOGIN FORM
-          ================================================= */}
+          {}
 
           <form onSubmit={handleSubmit}>
 
@@ -272,7 +245,7 @@ function Login() {
             </div>
 
 
-            {/* PASSWORD */}
+            {}
 
             <div className="form-group">
 
@@ -328,9 +301,6 @@ function Login() {
 
             </div>
 
-
-            {/* REMEMBER ME */}
-
             <div className="login-options">
 
               <label className="remember">
@@ -359,17 +329,11 @@ function Login() {
 
             </div>
 
-
-            {/* ERROR */}
-
             {error && (
               <div className="login-error">
                 {error}
               </div>
             )}
-
-
-            {/* LOGIN BUTTON */}
 
             <button
               type="submit"
@@ -385,11 +349,6 @@ function Login() {
             </button>
 
           </form>
-
-
-          {/* =================================================
-              SIGNUP
-          ================================================= */}
 
           {role !== "admin" && (
             <div className="signup-section">
@@ -409,19 +368,11 @@ function Login() {
             </div>
           )}
 
-
-          {/* =================================================
-              DIVIDER
-          ================================================= */}
-
           <div className="login-divider">
             <span>
               or
             </span>
           </div>
-
-
-          {/* GOOGLE */}
 
           <button
             type="button"

@@ -6,17 +6,16 @@ function LandingPage() {
   return (
     <div className="landing-page">
 
-      {/* ================= NAVBAR ================= */}
       <header className="navbar">
         <div className="navbar-container">
 
-          {/* Logo */}
+       
           <div className="logo">
             <div className="logo-icon">✦</div>
             <span>CAPACITY CONNECT</span>
           </div>
 
-          {/* Navigation */}
+      
           <nav className="nav-links">
             <a href="#home" className="active">
               Home
@@ -31,7 +30,6 @@ function LandingPage() {
             </a>
           </nav>
 
-          {/* Login */}
           <button className="login-btn">
             Login
           </button>
@@ -39,8 +37,6 @@ function LandingPage() {
         </div>
       </header>
 
-
-      {/* ================= HERO ================= */}
       <section
         id="home"
         className="hero-section"
@@ -49,12 +45,10 @@ function LandingPage() {
         }}
       >
 
-        {/* Very light overlay */}
         <div className="hero-overlay"></div>
 
         <div className="hero-container">
 
-          {/* LEFT CONTENT */}
           <div className="hero-content">
 
             <div className="hero-badge">
@@ -88,8 +82,6 @@ function LandingPage() {
 
           </div>
 
-
-          {/* RIGHT COMPETENCY CARD */}
           <div className="hero-visual">
 
             <div className="competency-card">
@@ -106,8 +98,6 @@ function LandingPage() {
                 ></div>
               </div>
 
-
-              {/* Technical Skills */}
               <div className="skill-item">
 
                 <div className="skill-top">
@@ -123,9 +113,6 @@ function LandingPage() {
                 </div>
 
               </div>
-
-
-              {/* Communication */}
               <div className="skill-item">
 
                 <div className="skill-top">
@@ -142,8 +129,6 @@ function LandingPage() {
 
               </div>
 
-
-              {/* Problem Solving */}
               <div className="skill-item">
 
                 <div className="skill-top">
@@ -168,8 +153,6 @@ function LandingPage() {
 
       </section>
 
-
-      {/* ================= FEATURES ================= */}
       <section id="features" className="features-section">
 
         <div className="section-heading">
@@ -241,8 +224,6 @@ function LandingPage() {
 
       </section>
 
-
-      {/* ================= ABOUT ================= */}
       <section id="about" className="about-section">
 
         <div className="about-content">
