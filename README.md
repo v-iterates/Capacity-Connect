@@ -1,4 +1,4 @@
- Capacity Connect
+ **Capacity Connect**
 
 A Digital Capacity Building and Learning Management Portal
 
@@ -10,13 +10,13 @@ Smart India Hackathon 2026 | Smart Education
 > Category:Software
 
 
- About the Project
+ **About the Project**
 
 Capacity Connect is a digital capacity-building and learning management platform designed to provide a structured and personalized learning experience.
 
 The platform aims to connect **learners, educators, courses, skills, and assessments** in one place, helping users identify their learning needs and improve their skills through a guided learning journey.
 
-Problem Statement
+**Problem Statement**
 
 Traditional learning platforms mainly focus on providing courses and learning content. However, learners may still face difficulty in:
 
@@ -28,7 +28,7 @@ Traditional learning platforms mainly focus on providing courses and learning co
 
 Capacity Connect addresses these challenges through a more structured and skill-oriented learning ecosystem.
 
- Proposed Solution
+ **Proposed Solution**
 
 Capacity Connect provides a centralized platform where users can:
 
@@ -41,43 +41,43 @@ Capacity Connect provides a centralized platform where users can:
 
 The platform focuses on making learning more **structured, accessible, personalized, and outcome-oriented**.
 
- Key Features
+ ***Key Features***
 
- User Dashboard
+ **User Dashboard**
 * Personalized user profile
 * Learning progress tracking
 * Skill development overview
 * Recommended learning activities
 
-Skill Mapping
+**Skill Mapping**
 * Identify required skills
 * Map learning content with skills
 * Track skill development
 * Identify learning gaps
 
- Learning Management
+ **Learning Managemen**t
 * Structured learning resources
 * Course-based learning
 * Learning paths
 * Progress monitoring
 
- Assessment
+ **Assessment**
 * Skill-based assessments
 * Performance tracking
 * Identification of areas for improvement
 
-Progress Tracking
+**Progress Tracking**
 * Course completion tracking
 * Skill progress
 * Learning history
 * Performance insights
 
- Smart Recommendations
+ **Smart Recommendations**
 * Personalized learning recommendations
 * Suggested resources based on learner needs
 * Learning-path guidance
 
- System Approach
+ **System Approach**
 
                     ┌───────────────────┐
                     │      User         │
@@ -114,9 +114,7 @@ Progress Tracking
                     │ Progress & Skills │
                     └───────────────────┘
 
- Technology Stack
-
-> Update this section according to the technologies actually used in your implementation.
+ **Technology Stack**
 
 **Frontend**
 
@@ -127,17 +125,13 @@ Progress Tracking
 
 **Backend**
 
-* Node.js
-* Express.js
+* Python
+* FastAPIs
 
 **Database**
 
-* MongoDB
+* MySQL
 
-**AI / Recommendation**
-
-* Python
-* Machine Learning / Recommendation algorithms
 
 **Tools**
 
@@ -145,7 +139,7 @@ Progress Tracking
 * VS Code
 * REST APIs
 
- How It Works
+ ***How It Works***
 
 1. **User Registration/Login**
    Users create an account and access their personalized dashboard.
@@ -167,7 +161,7 @@ Progress Tracking
 
 ---
 
- USP
+ **USP**
 Unlike a basic course-based learning platform, **Capacity Connect focuses on the connection between skills, learning requirements, and learner progress**.
 
 The main idea is:
@@ -178,7 +172,8 @@ This creates a more structured learning journey instead of simply providing a co
 
 ---
 
- Impact
+ **Impact**
+ 
 Capacity Connect can help:
 
 *  Learners develop relevant skills
@@ -188,7 +183,7 @@ Capacity Connect can help:
 *  Improve continuous skill development
 *  Support institutions in capacity building
 
-Future Scope
+**Future Scope**
 
 Future versions can include:
 
@@ -201,7 +196,7 @@ Future versions can include:
 * Advanced dashboards and reports
 * Integration with additional learning platforms
 
- Getting Started
+ **Getting Started**
 
  1. Clone the Repository
 
@@ -259,7 +254,7 @@ capacity-connect/
 
 ---
 
- Research & References
+ **Research & References**
 
 The project research includes references to **iGOT Karmayogi, Smart India Hackathon, OECD digital education research, NPTEL, and India's EdTech ecosystem**. 
 
@@ -284,7 +279,5 @@ The project research includes references to **iGOT Karmayogi, Smart India Hackat
  License
 
 This project is developed as part of **Smart India Hackathon 2026**.
-
- **Capacity Connect — Learn Better. Build Skills. Grow.**
 
 
