@@ -280,4 +280,21 @@ The project research includes references to **iGOT Karmayogi, Smart India Hackat
 
 This project is developed as part of **Smart India Hackathon 2026**.
 
+## Project Demo
 
+Explore the key modules of Capacity Connect through the following demonstrations:
+
+### 1. Trainee Dashboard
+Demonstrates the trainee's learning interface, including course access, progress tracking, assessments, and achievements.
+
+[View Dashboard Demo](https://drive.google.com/file/d/1RIqjE9vu9NxCRRe2HaPSOcxovX4J9fNM/view?usp=drivesdk)
+
+### 2. Account Creation
+Demonstrates the user registration and account creation workflow.
+
+[View Account Creation Demo](https://drive.google.com/file/d/1jSwE7GI6dGj3l20Ec5QewMtifzT6ky3K/view?usp=drivesdk)
+
+### 3. Admin Login
+Demonstrates the secure admin authentication and administrative access flow.
+
+[View Admin Login Demo](https://drive.google.com/file/d/1h_0vGqk1A-BX9EXZUBRSU3aDB4UoboTf/view?usp=drivesdk)
